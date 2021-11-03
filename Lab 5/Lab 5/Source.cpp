@@ -90,15 +90,15 @@ int operation(int* array, int size)
 
 	for (int i = last_positive_index; i > 0; i--)
 	{
-		if (array[i] < 0)
+		if (array[i] > 0)
 		{
 			last_positive_index = i;
 			break;
 		}
 	}
-	if (array[last_positive_index] > 0)
+	if (array[last_positive_index] < 0)
 	{
-		cout << "There are no negative numbers in the array!" << endl;
+		cout << "There are no positive numbers in the array!" << endl;
 		return 0;
 	}
 	else
@@ -107,7 +107,7 @@ int operation(int* array, int size)
 		{
 			sum += array[i];
 		}
-		cout << "The sum of the array elements up to the last negative element: " << sum;
+		cout << "The sum of the array elements up to the last positive element: " << sum;
 	}
 	return sum;
 }

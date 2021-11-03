@@ -107,7 +107,7 @@ int operation(int* array, int size)
 		{
 			sum += array[i];
 		}
-		cout << "The sum of the array elements up to the last positive element: " << sum;
+		cout << "The sum of the array elements up to the last negative element: " << sum;
 	}
 	return sum;
 }

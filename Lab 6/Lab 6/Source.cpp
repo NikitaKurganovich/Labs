@@ -13,7 +13,7 @@ char message_for_minimum[SIZE_OF_TEXT_ARRAY] = "Entre a minimum of range: ";
 char message_for_maximum[SIZE_OF_TEXT_ARRAY] = "Entre a maximum of range: ";
 
 int validation(char* message);
-void randomizing_array(int** array, int height, int width);
+void randomizing_array(int**, int, int);
 void vector_creation(int**, int, int, int*);
 
 int main()
@@ -53,7 +53,6 @@ void randomizing_array(int** array, int width, int height)
 
 void vector_creation(int** array, int height, int width, int* vector)
 {
-
 	int index = width / 2;
 
 	cout << "Your vector: " << endl;
